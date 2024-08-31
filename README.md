@@ -1,38 +1,23 @@
-# create-svelte
+# Writing an article
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+1. Create a new markdown file in the `src/posts` directory. It should be named in the format `the-title-of-the-article.md`.
+2. Add the article metadata at the top of the file.
+3. Write the article body.
 
-## Creating a project
+## Article metadata
 
-If you're seeing this, you've probably already done this step. Congrats!
+The article metadata is the part of the file that is between the `---` lines. It is YAML formatted.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+### Required fields
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- `title`: The title of the article.
+- `date`: The date of the article.
+- `author`: The author of the article.
+- `category`: The category of the article.
+- `isPublished`: Whether the article is published.
 
-## Developing
+### Optional fields
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- `description`: The description of the article.
+- `image`: The image of the article.
+- `tags`: The tags of the article.

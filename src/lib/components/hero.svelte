@@ -1,6 +1,6 @@
 <div class="w-full md:w-3/4 px-4">
 	<img
-		src="https://images.unsplash.com/photo-1506157786151-b8491531f063"
+		src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 		alt="blog-featured-img"
 		class="mb-8"
 	/>

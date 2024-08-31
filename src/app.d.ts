@@ -12,6 +12,18 @@ type Post = {
 	title: string;
 	date: string;
 	author: string;
+	category: string;
 	slug: string;
-	publish: boolean;
+	isPublished: boolean;
+};
+
+type PostDetails = {
+	title: string;
+	date: string;
+	slug: string;
+};
+
+type PostGroup = {
+	category: string;
+	details: PostDetails[];
 };

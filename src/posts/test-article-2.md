@@ -1,10 +1,11 @@
 ---
 title: 'Test Article 2'
-date: '2024-08-30'
+date: '2024-11-30'
 author: 'Jane Doe'
-publish: true
+category: 'Web Development'
+isPublished: true
 ---
 
 ## {title}
 
-This is a second test article.
+This is a second test article. This will be deleted if there are articles added.
