@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { Footer } from '$lib/components';
 </script>
 
 <svelte:head>
@@ -20,4 +21,8 @@
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
+
+	<svelte:fragment slot="pageFooter">
+		<Footer />
+	</svelte:fragment>
 </AppShell>

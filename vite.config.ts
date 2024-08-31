@@ -5,5 +5,13 @@ import { kitRoutes } from 'vite-plugin-kit-routes';
 import type { KIT_ROUTES } from '$lib/ROUTES';
 
 export default defineConfig({
-	plugins: [sveltekit(), purgeCss(), kitRoutes<KIT_ROUTES>({})]
+	plugins: [
+		sveltekit(),
+		purgeCss(),
+		kitRoutes<KIT_ROUTES>({
+			LINKS: {
+				developer: 'https://jhenbert.pro'
+			}
+		})
+	]
 });

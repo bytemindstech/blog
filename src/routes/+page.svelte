@@ -1,15 +1,21 @@
 <script lang="ts">
-	import { route } from '$lib/ROUTES';
 	import type { PageData } from './$types';
+	import { Hero, SideBar } from '$lib/components';
 
 	export let data: PageData;
 </script>
 
-<div class="container mx-auto">
-	<h3 class="h3">Recent Posts</h3>
-	<ul>
-		{#each data.posts as post}
-			<li><a class="anchor" href={route('/[slug]', { slug: post.slug })}>{post.title}</a></li>
-		{/each}
-	</ul>
+<div class="flex flex-col">
+	<div class="bg-surface-100 py-8">
+		<div class="container mx-auto px-4">
+			<h1 class="h1 font-bold text-surface-800 mb-2">ByteMinds Updates</h1>
+		</div>
+	</div>
+
+	<div class="bg-white py-8">
+		<div class="container mx-auto px-4 flex flex-col md:flex-row">
+			<Hero />
+			<SideBar {data} />
+		</div>
+	</div>
 </div>
