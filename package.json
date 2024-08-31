@@ -39,5 +39,8 @@
     "vite-plugin-kit-routes": "^0.6.10",
     "vite-plugin-tailwind-purgecss": "0.3.3"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@jhenbert/date-formatter": "npm:@jsr/jhenbert__date-formatter@^0.1.3"
+  }
 }

@@ -8,7 +8,7 @@
 <div class="flex flex-col">
 	<div class="bg-surface-100 py-8">
 		<div class="container mx-auto px-4">
-			<h1 class="h1 font-bold text-surface-800 mb-2">ByteMinds Updates</h1>
+			<h2 class="h2 text-surface-800 mb-2">ByteMinds Blog</h2>
 		</div>
 	</div>
 

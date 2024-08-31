@@ -1,7 +1,14 @@
 <script lang="ts">
+	import dateFormatter from '@jhenbert/date-formatter';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
+
+	const date = dateFormatter(
+		'en-PH',
+		{ month: 'long', day: 'numeric', year: 'numeric' },
+		new Date(data.meta.date)
+	);
 </script>
 
 <div class="max-w-7xl mx-auto px-4 mb-8 sm:px-6 lg:px-8">
@@ -14,7 +21,7 @@
 		<!-- header -->
 		<div class="pb-8">
 			<p class="text-secondary-200">Author: <span>{data.meta.author}</span></p>
-			<p class="text-secondary-200 text-sm">Date: <span>{data.meta.date}</span></p>
+			<p class="text-secondary-200 text-sm">Date: <span>{date}</span></p>
 		</div>
 
 		<!-- content -->

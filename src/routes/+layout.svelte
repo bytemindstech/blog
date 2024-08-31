@@ -14,7 +14,7 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">ByteMinds | Blog</strong>
+				<strong class="text-xl uppercase">ByteMinds PH</strong>
 			</svelte:fragment>
 			<!-- <svelte:fragment slot="trail">About</svelte:fragment> -->
 		</AppBar>
