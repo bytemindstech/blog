@@ -33,7 +33,11 @@ const ACTIONS = {
  * LINKS
  */
 const LINKS = {
-  "developer": `https://jhenbert.pro`
+  "developer": `https://jhenbert.pro`,
+  "githubAvatar": (params: { avatarId: (string | number) }) => {
+    return `https://avatars.githubusercontent.com/u/${params.avatarId}?v=4`
+  },
+  "website": `https://bytemindsph.com`
 }
 
 type ParamValue = string | number | undefined
@@ -136,6 +140,6 @@ export type KIT_ROUTES = {
   PAGES: { '/': never, '/[slug]': 'slug' }
   SERVERS: { 'GET /api/posts': never }
   ACTIONS: Record<string, never>
-  LINKS: { 'developer': never }
-  Params: { slug: never }
+  LINKS: { 'developer': never, 'githubAvatar': 'avatarId', 'website': never }
+  Params: { slug: never, avatarId: never }
 }
