@@ -10,7 +10,9 @@ export default defineConfig({
 		purgeCss(),
 		kitRoutes<KIT_ROUTES>({
 			LINKS: {
-				developer: 'https://jhenbert.pro'
+				developer: 'https://jhenbert.pro',
+				githubAvatar: 'https://avatars.githubusercontent.com/u/[avatarId]?v=4',
+				website: 'https://bytemindsph.com'
 			}
 		})
 	]

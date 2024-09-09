@@ -11,17 +11,23 @@
 	);
 </script>
 
+<svelte:head>
+	<title>ByteMinds PH Blog - {data.meta.title}</title>
+</svelte:head>
+
 <div class="max-w-7xl mx-auto px-4 mb-8 sm:px-6 lg:px-8">
 	<div class="max-w-3xl mx-auto min-h-screen">
 		<!--breadcrumb-->
-		<ol class="breadcrumb py-4">
-			<li class="crumb"><a class="anchor" href="/">Home</a></li>
+		<ol class="breadcrumb text-success-500 py-4">
+			<li class="crumb"><a class="anchor" href="/">Blog</a></li>
+			<li class="crumb-separator" aria-hidden="true">&rsaquo;</li>
+			<li>{data.meta.title}</li>
 		</ol>
 
 		<!-- header -->
 		<div class="pb-8">
 			<p class="text-secondary-200">Author: <span>{data.meta.author}</span></p>
-			<p class="text-secondary-200 text-sm">Date: <span>{date}</span></p>
+			<p class="text-secondary-200 text-sm">Published on: <span>{date}</span></p>
 		</div>
 
 		<!-- content -->
