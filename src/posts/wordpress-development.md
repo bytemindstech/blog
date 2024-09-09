@@ -1,9 +1,9 @@
 ---
-title: 'Test Article'
-date: '2024-11-24'
-author: 'John Doe'
+title: 'WordPress Development'
+date: '2024-08-08'
+author: 'Rizaldy'
 category: 'WordPress Development'
-isPublished: true
+isPublished: false
 ---
 
 ## {title}
