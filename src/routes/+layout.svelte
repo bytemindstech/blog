@@ -2,17 +2,9 @@
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import { Footer } from '$lib/components';
 	import { page } from '$app/stores';
-	import '../app.postcss';
-	import { route } from '$lib/ROUTES';
+	import { metaDefaults } from '$lib';
 
-	// SEO meta tags
-	const metaDefaults = {
-		title: 'ByteMinds PH Blog - Online Tutoring for Academic Excellence',
-		description:
-			'ByteMinds PH - your trusted partner in online education. Access expert tutoring services anytime, anywhere, and elevate your learning experience.',
-		image: `${route('githubAvatar', { avatarId: '159615949' })}`,
-		url: 'https://blog.bytemindsph.com'
-	};
+	import '../app.postcss';
 
 	const meta = {
 		title: metaDefaults.title,

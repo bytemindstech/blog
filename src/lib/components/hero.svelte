@@ -1,13 +1,10 @@
 <script>
 	import { route } from '$lib/ROUTES';
+	import image from '$lib/assets/images/blog-featured-image.webp';
 </script>
 
 <div class="w-full md:w-3/4 px-4">
-	<img
-		src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-		alt="blog-featured-img"
-		class="mb-8"
-	/>
+	<img src={image} alt="blog-featured-img" class="mb-8" />
 
 	<div class="text-primary-700 mb-8">
 		<h2 class="h2 mb-4">
@@ -64,8 +61,8 @@
 				time effectively, and make the most of online courses.
 			</li>
 			<li>
-				<strong>Technology Reviews:</strong>Evaluations of the latest online teaching tools and
-				platforms. Find out which ones can help you achieve your educational goals.
+				<strong>Technology Reviews:</strong> Evaluations of the latest online teaching tools and platforms.
+				Find out which ones can help you achieve your educational goals.
 			</li>
 			<li>
 				<strong>Resources for Online Tutors:</strong> Guidance on setting up your online classroom, using

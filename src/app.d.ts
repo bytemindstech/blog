@@ -21,6 +21,7 @@ type PostDetails = {
 	title: string;
 	date: string;
 	slug: string;
+	isPublished: boolean;
 };
 
 type PostGroup = {

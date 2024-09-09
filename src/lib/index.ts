@@ -1,4 +1,5 @@
 // place files you want to import through the `$lib` alias in this folder.
+import { route } from './ROUTES';
 
 export const groupByCategory = (data: Post[]) => {
 	return data.reduce((accumulator: PostGroup[], item) => {
@@ -12,7 +13,8 @@ export const groupByCategory = (data: Post[]) => {
 			existingCategory.details.push({
 				title: item.title,
 				date: item.date,
-				slug: item.slug
+				slug: item.slug,
+				isPublished: item.isPublished
 			});
 		} else {
 			// If the category doesn't exist, create a new category
@@ -22,7 +24,8 @@ export const groupByCategory = (data: Post[]) => {
 					{
 						title: item.title,
 						date: item.date,
-						slug: item.slug
+						slug: item.slug,
+						isPublished: item.isPublished
 					}
 				]
 			});
@@ -30,4 +33,13 @@ export const groupByCategory = (data: Post[]) => {
 
 		return accumulator;
 	}, []);
+};
+
+// SEO meta tags
+export const metaDefaults = {
+	title: 'ByteMinds PH Blog - Online Tutoring for Academic Excellence',
+	description:
+		'ByteMinds PH - your trusted partner in online education. Access expert tutoring services anytime, anywhere, and elevate your learning experience.',
+	image: `${route('githubAvatar', { avatarId: '159615949' })}`,
+	url: 'https://blog.bytemindsph.com'
 };
