@@ -14,7 +14,9 @@
 
 	// Reset the title when navigating away
 	const resetTitle = () => {
-		document.title = metaDefaults.title; // Default home page title
+		if (typeof document !== 'undefined') {
+			document.title = metaDefaults.title; // Default home page title
+		}
 	};
 
 	// Set up the onDestroy hook
