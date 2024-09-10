@@ -4,6 +4,13 @@
 
 	export let data: any;
 
+	let showAllPosts = false;
+	const visibleCount = 3;
+
+	const showMorePosts = (data: Post[]) => data.length > visibleCount;
+
+	const toggleShowMorePosts = () => (showAllPosts = !showAllPosts);
+
 	const groupedData = groupByCategory(data.posts);
 </script>
 
@@ -11,7 +18,7 @@
 	<div class="bg-surface-50 p-4">
 		<h3 class="h3 text-surface-800 mb-4">Recent Posts</h3>
 		<ul class="list list-inside">
-			{#each data.posts as post}
+			{#each showAllPosts ? data.posts : data.posts.slice(0, visibleCount) as post}
 				{#if post.isPublished}
 					<li class="mb-2">
 						<a
@@ -22,6 +29,12 @@
 				{/if}
 			{/each}
 		</ul>
+		{#if showMorePosts(data.posts) && !showAllPosts}
+			<button
+				class="btn btn-sm hover:variant-ghost-primary text-success-800 mt-2"
+				on:click={toggleShowMorePosts}>Show more...</button
+			>
+		{/if}
 	</div>
 	<div class="bg-surface-100 p-4 mt-4">
 		<h3 class="h3 text-surface-800 mb-4">Categories</h3>
