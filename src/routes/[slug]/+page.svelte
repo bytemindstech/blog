@@ -38,13 +38,13 @@
 
 		<!-- header -->
 		<div class="pb-8">
-			<p class="text-secondary-200 italic">Written by: <span>{data.meta.author}</span></p>
+			<p class="text-secondary-200 italic">Posted by: <span>{data.meta.author}</span></p>
 			<p class="text-secondary-200 text-sm italic">Published on: <span>{date}</span></p>
 		</div>
 
 		<!-- content -->
 		<div
-			class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto prose-h1:text-primary-100 prose-h2:text-surface-100 prose-h3:text-surface-100 prose-h4:text-surface-100 prose-strong:text-surface-100 prose-code:text-surface-100 prose-p:text-surface-100"
+			class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto prose-h1:text-primary-100 prose-h2:text-surface-100 prose-h3:text-surface-100 prose-h4:text-surface-100 prose-strong:text-surface-100 prose-code:text-surface-100 prose-p:text-surface-100 prose-a:text-success-500 prose-ul:text-surface-100"
 		>
 			<svelte:component this={data.content} />
 		</div>

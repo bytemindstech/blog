@@ -71,7 +71,6 @@
 			<svelte:fragment slot="lead">
 				<strong class="text-xl uppercase">ByteMinds PH</strong>
 			</svelte:fragment>
-			<!-- <svelte:fragment slot="trail">About</svelte:fragment> -->
 		</AppBar>
 	</svelte:fragment>
 	<!-- Page Route Content -->

@@ -27,7 +27,7 @@ HTML is a markup language, meaning it uses "tags" to structure documents and def
 Below is an example of a simple HTML page:
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
